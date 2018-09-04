@@ -29,7 +29,7 @@ Created 2014/11/17 Shaohua Wang
 
 /* Macros and structs below are from ftdefs.h in MyISAM */
 /** Check a char is true word */
-#define true_word_char(c, ch) ((c) & (_MY_U | _MY_L | _MY_NMR) || (ch) == '_')
+#define true_word_char(c, ch) ((c) & (_MY_U | _MY_L | _MY_NMR) || (ch) == '_' || (ch) == '&')
 
 /** Check if a char is misc word */
 #define misc_word_char(X)       0
